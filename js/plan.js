@@ -22,6 +22,7 @@ btnPlan.addEventListener("click", () => {
   }
 });
 
+
 export const elegirEjercicio = (idEjercicio) => {
   const ejercicio = ejerciciosDisponibles.find(
     (ejercicio) => ejercicio.id === idEjercicio
@@ -49,7 +50,6 @@ export const elegirEjercicio = (idEjercicio) => {
   }
   plan = JSON.parse(sessionStorage.getItem("plan"));
 
-  alert(`usted selecciono el ejercicio ${nombre}`);
 };
 
 const dibujarPlan = () => {
